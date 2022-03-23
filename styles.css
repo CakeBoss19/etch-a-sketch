@@ -22,7 +22,6 @@ header {
     width: auto;
     grid-template-columns: repeat(16, 30px);
     grid-template-rows: repeat(16, 30px);
-    grid-auto-rows: min-content max-content auto;
     justify-content: center;
 }
 
