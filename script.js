@@ -17,46 +17,46 @@ function makeGrid(inputValue){
             row.appendChild(cell).classList = 'cell';
             cell.addEventListener('mouseleave', () => {
             cell.classList.toggle('hover');
-            }) 
-        }
-    }
-}
+            }) ;
+        };
+    };
+};
 
 function resetGrid(){
     while(grid_div.firstChild){
         grid_div.removeChild(grid_div.firstChild);
     } warning.textContent = '';
-}
+};
 
 button.addEventListener('click', () => {
     resetGrid();
-    let inputValue = prompt('1 - 75', '16');
+    let inputValue = prompt('1 - 75', '64');
     if(inputValue > 75){
         return warning.textContent = 'Something a Little Smaller...'
-    }
+    };
     makeGrid(inputValue);
-})
+});
 
 btn1.addEventListener('click', () => {
     resetGrid();
     let inputValue = 4;
     makeGrid(inputValue);
-})
+});
 
 btn2.addEventListener('click', () => {
     resetGrid();
     let inputValue = 8;
     makeGrid(inputValue);
-})
+});
 
 btn3.addEventListener('click', () => {
     resetGrid();
     let inputValue = 16;
     makeGrid(inputValue);
-})
+});
 
 btn4.addEventListener('click', () => {
     resetGrid();
     let inputValue = 32;
     makeGrid(inputValue);
-})
+});
