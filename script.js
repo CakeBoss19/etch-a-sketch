@@ -12,10 +12,18 @@ function makeGrid(rowNum){
         for(c = 0; c < rowNum; c++){
             let cell = document.createElement('div');
             row.appendChild(cell).classList = 'cell';
+            cell.addEventListener('mouseenter', () => {
+                cell.classList.toggle('hover');
+            })
         }
     }
 }
 
+function resetGrid(){
+    //selects each div and un-appends from the grid
+    //prompt user for a new rowNum
+        //loop throught makeGrid again with new rowNum
+}
 // function makeGrid(rowNum){
 //     for(i = 0; i < (rowNum * rowNum); i++){
 //         let cell = document.createElement('div');
@@ -28,8 +36,3 @@ function makeGrid(rowNum){
 
 makeGrid(16);
 
-function resetGrid(){
-    //selects each div and un-appends from the grid
-    //prompt user for a new rowNum
-        //loop throught makeGrid again with new rowNum
-}
